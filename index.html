@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <ul>
+                <li><a>Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+            <a class="main-navigation__logo"><img src="" width="" height="" alt="sedona"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="" width="" height="" alt="welcome">
+        </section>
+        <section class="info">
+            <h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+            <ul class="features">
+                <li class="features__item features__item--type-1">
+                    <h3>Настоящий городок</h3><span>— №1 —</span>
+                    <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+                </li>
+                <li><img src="" width="" height="" alt="town"></li>
+                <li class="features__item features__item--type-2">
+                    <h3>Жилье</h3>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="features__item features__item--type-2">
+                    <h3>Еда</h3>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="features__item features__item--type-2">
+                    <h3>Сувениры</h3>
+                    <p>Не только китайского, но и местного производства!</p>
+                </li>
+                <li><img src="" width="" height="" alt="bridge"></li>
+                <li class="features__item features__item--type-1">
+                    <h3>Там есть мост дьявола</h3><span>— №2 —</span>
+                    <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+                </li>
+                <li class="features__item features__item--type-3">
+                    <h3>Небольшая площадь</h3><span>— №3 —</span>
+                    <p>Все достопримечательности находятся очень близко</p>
+                </li>
+                <li class="features__item features__item--type-3">ы
+                    <h3>Красивая дорога</h3><span>— №4 —</span>
+                    <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+                </li>
+                <li class="features__item features__item--type-3">
+                    <h3>Мало туристов</h3><span>— №5 —</span>
+                    <p>Большинство едет в гранд-каньон и толпится там</p>
+                </li>
+            </ul>
+        </section>
+        <section class="hotel-search">
+            <h2>
+                Заинтересовались?
+            </h2>
+            <p>
+                Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+            </p>
+            <button type="button" class="btn">Поиск гостиницы в седоне</button>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4405.6102788304!2d84.87641765116356!3d56.48834316671024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4326951d3bcc45b5%3A0x40af39a1b728f33b!2sBolnichnaya+ul.%2C+Timiryazevskoye%2C+Tomskaya+oblast&#39;%2C+Russia%2C+634510!5e0!3m2!1sen!2sde!4v1502459724444" width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <b class="main-footer__hashteg">#Visitsedona</b>
+        <ul class="main-footer__social">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+        </ul>
+        <a href="#" class="main-footer__copyright">
+            <span>Website by</span>
+            <img src="#" alt="html-academy" width="" height="">
+        </a>
+    </footer>
+    <section class="popup">
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="in">Дата заезда:</label>
+            <input type="text" name="date-in" id="in" placeholder="24 Апреля 2017">
+            <button type="button" class="popup__calendar-btn">#</button>
+            <label for="out">Дата выезда:</label>
+            <input type="text" name="date-out" id="out" placeholder="24 Апреля 2017">
+            <button type="button" class="popup__calendar-btn">#</button>
+            <label for="adults">Взрослые:</label>
+            <button type="button" class="popup__calendar-minus-btn">-</button>
+            <input type="text" name="numbers" id="adults" placeholder="2">
+            <button type="button" class="popup__calendar-plus-btn">+</button>
+            <label for="children">Дети:</label>
+            <button type="button" class="popup__calendar-minus-btn">-</button>
+            <input type="text" name="numbers" id="children" placeholder="0">
+            <button type="button" class="popup__calendar-plus-btn">+</button>
+            <a href="#" class="popup__search-btn">Найти</a>
+        </form>
+    </section>
+</body>
 </html>
