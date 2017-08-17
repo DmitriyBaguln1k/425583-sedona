@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -22,7 +23,6 @@
            <h2 class="visually-hidden">Welcome to the gargeous</h2>
            <h1 class="visually-hidden">Sedona</h1>
            <p class="visually-hidden">Because the Grand Canyon sucks!</p>
-            <img src="img/welcome.jpg" width="458" height="352" alt="welcome">
         </section>
         <section class="info">
             <h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
@@ -39,14 +39,17 @@
                 </section>
                 <ul class="features__item features__item--type-2">
                 <li>
+                   <img src="img/icon-1.svg" alt="Home" width="75" height="72">
                     <h3>Жилье</h3>
                     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li>
+                   <img src="img/icon-3.svg" alt="Burger" width="74" height="70">
                     <h3>Еда</h3>
                     <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li>
+                   <img src="img/icon-2.svg" alt="Present" width="64" height="76">
                     <h3>Сувениры</h3>
                     <p>Не только китайского, но и местного производства!</p>
                 </li>
@@ -84,7 +87,7 @@
         </section>
         <section class="map">
            <h4 class="visually-hidden">Sedona map</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26187.975683675024!2d-111.79594825170956!3d34.868865145048275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KHQtdC00L7QvdCwINGG0LXQvdGC0YAg0LPQvtGA0L7QtNCw!5e0!3m2!1sru!2sru!4v1502615035913" width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26187.975683675024!2d-111.79594825170956!3d34.868865145048275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KHQtdC00L7QvdCwINGG0LXQvdGC0YAg0LPQvtGA0L7QtNCw!5e0!3m2!1sru!2sru!4v1502615035913" width="1200" height="473" style="border:0" allowfullscreen></iframe>
         </section>
     </main>
     <footer class="main-footer">
@@ -95,7 +98,7 @@
             <li><a href="#">Youtube</a></li>
         </ul>
             <span>Website by</span>
-           <a href="https://htmlacademy.ru/" class="main-footer__copyright"><img src="img/html-logo.png" alt="html-academy" width="115" height="41">
+           <a href="https://htmlacademy.ru/" class="main-footer__copyright"><img src="img/logo-htmlacademy.svg" alt="html-academy" width="115" height="41">
         </a>
     </footer>
     <section class="popup">
@@ -103,10 +106,10 @@
         <form action="https://echo.htmlacademy.ru" method="post">
             <label for="in">Дата заезда:</label>
             <input type="text" name="date-in" id="in" placeholder="24 Апреля 2017">
-            <button type="button" class="popup__calendar-btn">#</button>
+            <button type="button" class="popup__calendar-btn"><img src="img/calendar.svg" width="21" hight="22"></button>
             <label for="out">Дата выезда:</label>
             <input type="text" name="date-out" id="out" placeholder="24 Апреля 2017">
-            <button type="button" class="popup__calendar-btn">#</button>
+            <button type="button" class="popup__calendar-btn"><img src="img/calendar.png" width="21" hight="22"></button>
             <label for="adults">Взрослые:</label>
             <button type="button" class="popup__calendar-minus-btn">-</button>
             <input type="text" name="numbers" id="adults" placeholder="2">

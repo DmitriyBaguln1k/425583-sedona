@@ -1,9 +1,35 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.info h1 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #0000;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.hotel-search h2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #0000;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.features h3 {
+    font-size: 21px;
+    line-height: 21px;
+    color: #0000;
+    font-family: 'PT Sans', sans-serif;
+}
+
 .visually-hidden {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
