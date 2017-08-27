@@ -23,11 +23,13 @@
 </symbol>
 </defs>
 </svg>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <ul>
+     <header class="main-header">
+        <nav class="main-navigation container">
+            <ul class="main-navigation__column-left">
                 <li><a href="index.html">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Фото и видео</a></li>    
+                </ul>
+                <ul class="main-navigation__column-right">
                 <li><a href="#">Карта штата</a></li>
                 <li><a class="current">Гостиницы</a></li>
             </ul>
@@ -35,7 +37,7 @@
         </nav>
     </header>
     <main>
-        <section class="top-menu">
+        <section class="top-menu container">
             <h1 class="visually-hidden">Меню</h1>
             <form action="https://echo.htmlacademy.ru" method="post">
                 <div class="top-menu__checkbox-selector top-menu__checkbox-selector--left">
@@ -65,7 +67,7 @@
                 <input type="submit" class="top-menu__show-btn btn" value="Показать">
             </form>
         </section>
-        <section class="hotels">
+        <section class="hotels container">
             <h2 class="visually-hidden">Отели, гостиницы, виллы</h2>
             <div class="hotels__sort">
                 <h3>Найдено:3</h3>
@@ -78,49 +80,73 @@
             </div>
             <article class="hotels__item hotels__item-amara">
                 <img src="img/amara.png" alt="Amara Resort & Spa" width="135" height="90">
+                <div class="first-column">
                 <a href="#" class="hotel-name">
                     Amara Resort & Spa
                 </a>
+                <div>
                 <span class="Hotel-type">Гостиница</span>
                 <span class="price">От 4000 р.</span>
+                    </div>
+                    <div>
                 <a href="#" class="more-btn">Подробнее</a>
                 <a href="#" class="reserve-btn">Забронировать</a>
+                </div>
+                </div>
+                <div class="second-column">
              <div class="stars">
               <h3 class="visually-hidden">Четыре звезды</h3>
                </div>
                 <span class="rating">Рейтинг: 8,5</span>
+                </div>
             </article>
             <article class="hotels__item hotels__item-desert">
                 <img src="img/desert.png" alt="Desert Quail Inn" width="135" height="90">
+                <div class="first-column">
                 <a href="#" class="hotel-name">
                     Desert Quail Inn
                     </a>
+                    <div>
                 <span class="Hotel-type">Мотель</span>
                 <span class="price">От 3000 р.</span>
+                    </div>
+                    <div>
                 <a href="#" class="more-btn">Подробнее</a>
                 <a href="#" class="reserve-btn">Забронировать</a>
+                </div>
+                </div>
+                <div class="second-column">
                <div class="stars">
                <h3 class="visually-hidden">Три звезды</h3>
                </div>
                 <span class="rating">Рейтинг: 8,9</span>
+                </div>
             </article>
             <article class="hotels__item hotels__item-villas">
                 <img src="img/villas.png" alt="Villas At Poco Diablo" width="135" height="90">
+                <div class="first-column">
                 <a href="#" class="hotel-name">
                     Villas At Poco Diablo
                     </a>
+                    <div>
                 <span class="Hotel-type">Апартаменты</span>
                 <span class="price">От 2000 р.</span>
+                </div>
+                <div>
                 <a href="#" class="more-btn">Подробнее</a>
                 <a href="#" class="reserve-btn">Забронировать</a>
+                </div>
+                </div>
+                <div class="second-column">
               <div class="stars">
               <h3 class="visually-hidden">Две звезды</h3>
                </div>
                 <span class="rating">Рейтинг: 9,2</span>
+                </div>
             </article>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <b class="main-footer__hashteg">#Visitsedona</b>
         <ul class="main-footer__social">
             <li><a class="twitter" href="#">Twitter</a></li>
