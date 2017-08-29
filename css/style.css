@@ -291,63 +291,61 @@ display: flex;
     line-height: 26px;
     font-weight: bold;
 }
-
-.main-footer ul {
-    list-style: none;
+.main-footer__social{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.main-footer__social li{
-    display: inline-block;
 }
 .main-footer__social a {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
     font-size: 0px;
 }
-
 .main-footer__social .twitter::after {
     position: absolute;
     content: "";
     background: url("../img/twitter.svg") no-repeat;
-    width: 20px;
-    height: 20px;
-    top: 17px;
-    left: 15px;
+    width: 18px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .main-footer__social .facebook::after {
     position: absolute;
     content: "";
     background: url("../img/fb-icon.svg") no-repeat;
-    width: 20px;
-    height: 25px;
-    top: 13px;
-    left: 17px;
+    width: 12px;
+    height: 22px;
+   top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .main-footer__social .youtube::after {
     position: absolute;
     content: "";
     background: url("../img/youtube.svg") no-repeat;
-    width: 25px;
-    height: 25px;
-    top: 16px;
-    left: 13px;
+    width: 20px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-.main-footer__social a:hover {
+.main-footer__social a:hover,
+.main-footer__social a:focus{
     background-color: #669ec0;
 }
-
-.main-footer__social a:focus {
-    background-color: #669ec0;
-}
-
 .main-footer__social a:active {
     background-color: #5496bd;
 }
@@ -356,10 +354,11 @@ display: flex;
     position: absolute;
     content: "";
     background: url("../img/youtube.svg") no-repeat;
-    width: 25px;
-    height: 25px;
-    top: 16px;
-    left: 13px;
+    width: 20px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     opacity: 0.4;
 }
 
@@ -367,10 +366,11 @@ display: flex;
     position: absolute;
     content: "";
     background: url("../img/fb-icon.svg") no-repeat;
-    width: 20px;
-    height: 25px;
-    top: 13px;
-    left: 17px;
+    width: 12px;
+    height: 22px;
+   top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     opacity: 0.4;
 }
 
@@ -378,17 +378,20 @@ display: flex;
     position: absolute;
     content: "";
     background: url("../img/twitter.svg") no-repeat;
-    width: 20px;
-    height: 20px;
-    top: 17px;
-    left: 15px;
+    width: 18px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     opacity: 0.4;
 }
 
 .main-footer__copyright span {
     font-size: 14px;
     line-height: 26px;
+    display: inline-block;
     vertical-align: middle;
+    margin: 0 auto;
 }
 .main-footer__copyright a {
     display: inline-block;
@@ -604,7 +607,6 @@ popup__calendar-plus-btn:focus::before{
 .top-menu {
     background-image: url(../img/filter%20background.jpg);
     background-repeat: no-repeat;
-    min-height: 217px;
     width: 1200px;
 }
 
@@ -626,28 +628,111 @@ popup__calendar-plus-btn:focus::before{
     line-height: 21px;
     font-weight: bold;
     color: #ffffff;
+    margin: 0;
+    padding: 0;
+    margin-top: 32px;
+    margin-bottom: 35px;
 }
-
-.top-menu__rangeinput label {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.top-menu__rangeinput input {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
+.top-menu__rangeinput{
+    width: 330px;
+    color: #fff;
     text-transform: uppercase;
 }
-
-.top-menu__rangeinput input::-webkit-input-placeholder {
-    color: #ffffff;
+.top-menu__rangeinput--title{
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
 }
-
+.top-menu__rangeinput--price-controls{
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+.top-menu__rangeinput--price-controls label{
+    font-size: 14px;
+    line-height: 38px;
+    cursor: pointer;
+}
+.top-menu__rangeinput--price-controls .min-price,
+.top-menu__rangeinput--price-controls .max-price{
+    width: 90px;
+    padding-left: 65px;
+}
+.top-menu__rangeinput--price-controls input{
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font:inherit;
+    background:none;
+    border: none;
+    outline: none;
+}
+.top-menu__rangeinput--price-controls::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.top-menu__rangeinput--range-controls{
+    position: relative;
+    margin-bottom: 32px;
+}
+.top-menu__rangeinput--range-controls .scale{
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.top-menu__rangeinput--range-controls .bar{
+    width: 80%;
+    height: 2px;
+    background: #fff;
+}
+.top-menu__rangeinput--range-controls .range-toggle{
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+        cursor:pointer;
+}
+.top-menu__rangeinput--range-controls .range-toggle:hover{
+    background: #1c4f80;
+}
+.top-menu__rangeinput--range-controls .range-toggle-min{
+    left: 0;
+}
+.top-menu__rangeinput--range-controls .range-toggle-max{
+    left:80%;
+}
+.top-menu__show-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    padding: 6px 35px;
+    background-color: transparent;
+    border-color: #ffffff;
+    border:2px solid #fff;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+.top-menu__show-btn:hover,
+.top-menu__show-btn:focus{
+    background-color: #fff;
+    color: #000;
+}
 .top-menu__checkbox-selector {
     display: -webkit-flex;
     display: -moz-flex;
@@ -656,34 +741,47 @@ popup__calendar-plus-btn:focus::before{
     display: flex;
     flex-direction: column;
 }
-
-.top-menu__checkbox-selector label {
-    color: #ffffff;
-}
-
-.top-menu__show-btn {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
-    width: 136px;
-    height: 36px;
-    background-color: transparent;
-    border-color: #ffffff;
-    border-style: solid;
+input[type="checkbox"]+label{
+    color: #fff;
+    position: relative;
+    margin-bottom: 36px;
+    width: 100px;
     cursor: pointer;
-    margin-left: 500px;
+    
 }
-
-.top-menu__show-btn:hover {
-    background-color: #ffffff;
-    color: #000000;
+.top-menu__checkbox-selector input{
+  display: none;
 }
-
-.top-menu__show-btn:focus {
-    background-color: #ffffff;
-    color: #000000;
+input[type="checkbox"]+label::after{
+    content: "";
+   position: absolute;
+   width: 25px;
+    height: 25px;
+    background: url("../img/checkbox-off.svg") no-repeat;
+    left: -40px;
+    top: 0px;
+    cursor: pointer;
 }
-
+input[type="checkbox"]:checked+label::after{
+    content: "";
+   position: absolute;
+   width: 25px;
+    height: 25px;
+    background: url("../img/checkbox-on.svg") no-repeat;
+    left: -40px;
+    top: 0px;
+    cursor: pointer;
+}
+input[type="checkbox"]:disabled+label::after{
+    content: "";
+   position: absolute;
+   width: 25px;
+    height: 25px;
+    background: url("../img/checkbox-on.svg") no-repeat;
+    left: -40px;
+    opacity: 0.3;
+    top: 0px;
+}
 .hotels {
    display: -webkit-flex;
    display: -moz-flex;
@@ -751,6 +849,8 @@ popup__calendar-plus-btn:focus::before{
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 10px solid #cacaca;
+    cursor: pointer;
+    left: 770px;
 }
 
 .hotels__sort .triangle-down {
@@ -771,6 +871,8 @@ popup__calendar-plus-btn:focus::before{
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 10px solid #cacaca;
+    cursor: pointer;
+    left: 770px;
 }
 
 .triangle-down:hover::after {
@@ -812,6 +914,12 @@ popup__calendar-plus-btn:focus::before{
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 31px;
+    padding-bottom: 30px;
+}
+.hotels__item:last-child{
+    border-bottom: 1px solid #e5e5e5;
 }
 .hotels__item .first-column{
     display: flex;
