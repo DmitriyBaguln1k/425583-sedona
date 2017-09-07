@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
     <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -21,7 +21,7 @@
         </symbol>
         </defs>
     </svg>
-    <div class="container">
+       <div class="container">
         <header class="main-header">
             <nav class="main-navigation">
                 <ul>
@@ -105,10 +105,10 @@
                 <h2>Заинтересовались?</h2>
                 <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <div class="popup-position">
-                <button type="button" class="search-hotels-btn btn" title="Поиск гостиницы в седоне">Поиск гостиницы в седоне</button>
+                <a class="search-hotels-btn btn" title="Поиск гостиницы в седоне">Поиск гостиницы в седоне</a>
                 <div class="popup">
                     <h3 class="visually-hidden">Поиск гостиницы</h3>
-                    <form action="https://echo.htmlacademy.ru" method="post">
+                    <form  action="https://echo.htmlacademy.ru" method="post">
                         <div class="row">
                           <label for="in">Дата заезда:</label>
                            <div class="holder">
@@ -141,7 +141,7 @@
                             <input type="text" name="numbers" id="children" placeholder="0">
                             <button type="button" class="popup__calendar-plus-btn">Больше</button>
                         </div>
-                        <button type="submit" class="popup__search-btn btn">Найти</button>
+                        <button type="submit" class="popup__search-btn btn modal-content-close">Найти</button>
                     </form>
                 </div>
                 </div>
@@ -152,18 +152,24 @@
             </section>
         </main>
         <footer class="main-footer transparent-layer">
+           <div class="main-footer__column">
             <b class="main-footer__hashteg">#Visitsedona</b>
+            </div>
+            <div class="main-footer__column">
             <ul class="main-footer__social">
                 <li><a class="twitter" href="#">Twitter</a></li>
                 <li><a class="facebook" href="#">Facebook</a></li>
                 <li><a class="youtube" href="#">Youtube</a></li>
             </ul>
-            <div class="main-footer__copyright">
+            </div>
+            <div class="main-footer__copyright main-footer__column">
                 <span>Website by</span>
                 <a href="https://htmlacademy.ru/">Html Academy<svg class="icon2 icon-logo-htmlacademy"><use xlink:href="#icon-logo-htmlacademy"></use></svg>
             </a>
             </div>
         </footer>
     </div>
+    <script src="js/script.min.js">
+    </script>
 </body>
 </html>
