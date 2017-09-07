@@ -371,15 +371,15 @@ img {
     color: #928a85;
 }
 
-.popup {
+.modal-content-closed {
+    display: none;
+}
+
+.modal-content-opened {
     display: block;
     animation-name: reveal;
     animation-duration: 1.5s;
     animation-timing-function: linear;
-}
-
-.modal-content-closed {
-    display: none;
 }
 
 @keyframes reveal {
