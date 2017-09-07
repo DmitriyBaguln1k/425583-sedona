@@ -142,7 +142,7 @@ img {
     width: 1200px;
     min-height: 509px;
     margin-bottom: 60px;
-    background: #ddebf4 url(../img/Main-background.jpg) no-repeat 0 -55px;
+    background: #ddebf4 url(../img/bannersedona.jpg) no-repeat 0 -55px;
     background-size: cover;
 }
 
@@ -658,7 +658,7 @@ img {
 }
 
 .filter-menu {
-    background: url(../img/filter%20background.jpg) no-repeat 0 -60px;
+    background: url(../img/filter_background.jpg) no-repeat 0 -60px;
     background-size: cover;
     color: #fff;
     font-size: 16px;
@@ -844,6 +844,7 @@ input[type="checkbox"]+label {
     margin-bottom: 25px;
     width: 100px;
     cursor: pointer;
+    outline: none;
 }
 
 input[type="checkbox"]+label::after {
@@ -886,7 +887,7 @@ input[type="checkbox"]:disabled+label::after {
     width: 25px;
     height: 25px;
     background: url("../img/checkbox-off.svg") no-repeat;
-    left: -40px;
+    left: -38px;
     opacity: 0.3;
     top: 0px;
     cursor: not-allowed;
@@ -1107,7 +1108,7 @@ input[type="checkbox"]:disabled+label::after {
     line-height: 21px;
     color: #000;
     font-weight: bold;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', 'sans-serif';
 }
 
 .price {
